@@ -1,0 +1,34 @@
+.navbar {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  & > ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: end;
+
+    & > li {
+      background: #6e6e6e;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background: #363636;
+      }
+
+      &.current {
+        background: #363636;
+      }
+
+      & > a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        padding: 1rem;
+      }
+    }
+  }
+}
