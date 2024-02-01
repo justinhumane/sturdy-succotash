@@ -1,18 +1,33 @@
 .hero {
-  max-width: 1000px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   margin: 0 auto;
   align-items: center;
   background-image: url(../assets/istockphoto-969660694-1024x1024.jpg);
   background-position: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-size: cover;
 
-h1, p {
-  color: white;
-}
-button{
-  background: #6e6e6e;
-  border-radius: 0.5rem;
-  color: white;
-}
+  h1,
+  p {
+    color: white;
+  }
+  button {
+    background: #6e6e6e;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 0;
+  }
+
+  & > .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    padding: 2rem;
+  }
 }
