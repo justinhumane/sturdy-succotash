@@ -1,5 +1,6 @@
 import "../../sass/navbar.scss";
 import NavItem from "./NavItem";
+import PropTypes from "prop-types";
 
 const Navbar = ({ companyName, navigation }) => {
   return (
@@ -13,5 +14,11 @@ const Navbar = ({ companyName, navigation }) => {
     </nav>
   );
 };
+//Added typechecking
+Navbar.propTypes = {
+  companyName: PropTypes.string,
+  navigation: PropTypes.array
+
+}
 
 export default Navbar;
