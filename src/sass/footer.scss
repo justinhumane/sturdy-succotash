@@ -1,0 +1,17 @@
+.footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-top: 2px solid black;
+  padding: 2rem;
+  margin-top: auto;
+
+  button {
+    margin-top: 0.625rem;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+  }
+}

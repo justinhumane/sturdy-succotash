@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+
+
 const NavItem = ({ name, href, current }) => {
   return (
     <li className={current ? "current" : ""}>
@@ -5,5 +8,10 @@ const NavItem = ({ name, href, current }) => {
     </li>
   );
 };
-
+//Added Typechecking with PropTypes
+NavItem.propTypes = {
+  name: PropTypes.string,
+  href: PropTypes.string,
+  current: PropTypes.string
+};
 export default NavItem;
